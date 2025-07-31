@@ -16,5 +16,5 @@ package: build
 	tar -czf dist/node-agent.tar.gz dist/node-agent
 
 .PHONY: docker-build
-docker-build: build
+docker-build: package
     docker build -f ./docker/Dockerfile -t $(ORG)/apo-node-agent:$(TAG) .
