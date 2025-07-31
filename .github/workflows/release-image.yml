@@ -56,7 +56,7 @@ jobs:
       - name: Build node-agent docker image and push
         run: |
           make docker-build TAG=${{ github.event.inputs.tag }} ORG=${{ env.REGISTRY_HOST }}/${{ secrets.REGISTRY_USERNAME }}
-          docker push ${{ env.NODE_AGENT_CONTAINER_NAME }}
+          docker push ${{ env.NODE_AGENT_IMAGE_FULL_TAG }}
 
       - name: push tag
         uses: anothrNick/github-tag-action@v1
