@@ -17,4 +17,4 @@ package: build
 
 .PHONY: docker-build
 docker-build: package
-    docker build -f ./docker/Dockerfile -t $(ORG)/apo-node-agent:$(TAG) .
+	docker build -f ./docker/Dockerfile -t $(ORG)/apo-node-agent:$(TAG) .
