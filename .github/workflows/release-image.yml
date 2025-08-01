@@ -11,7 +11,7 @@ on:
         required: true
 
 env:
-  NODE_AGENT_CONTAINER_NAME: apo-node-agent
+  NODE_AGENT_CONTAINER_NAME: node-agent
   REGISTRY_HOST: registry.cn-hangzhou.aliyuncs.com
 
 jobs:
